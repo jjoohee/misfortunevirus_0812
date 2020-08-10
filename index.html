@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>흉둥이</title>
+	<link rel="stylesheet" type="text/css" href="css/doong_style.css">
+</head>
+<body oncontextmenu="return false" onselectstart="return false" id="bodyy">
+
+	<div class="warp" id="doongmain" -ms-overflow-style: none;>
+		<div id="back0">
+			
+		</div>
+
+		<!--이미지들-->
+	
+
+		<img src="imgdoong/background1.png" id="back1">
+		<img src="imgdoong/background3.png" id="back3">
+		<img src="imgdoong/background3-2.png" id="back3-1">
+		<img src="imgdoong/background4.gif" id="back4">
+		<img src="imgdoong/background5.png" id="back5">
+
+		<img src="imgdoong/rain.png" id="rain1">
+		<img src="imgdoong/rain.png" id="rain2">
+		<img src="imgdoong/rain.png" id="rain3">
+		<img src="imgdoong/rain.png" id="rain4">
+		<img src="imgdoong/rain.png" id="rain5">
+		<img src="imgdoong/rain.png" id="rain6">
+		<img src="imgdoong/rain.png" id="rain7">
+		<img src="imgdoong/rain.png" id="rain8">
+		<img src="imgdoong/rain.png" id="rain9">
+		<img src="imgdoong/rain.png" id="rain10">
+		<img src="imgdoong/rain.png" id="rain11">
+		<div style="background: black; width: 12000px; height: 300px; position: absolute;">
+			
+		</div>
+	
+
+		<img src="imgdoong/bigcell.png" id="bigcell">
+
+		<img src="imgdoong/bigger.png" id="bigger">
+		<button onclick="fnMove('2')" class="button1"><img src="imgdoong/cell.png" class="cell1" id="cell1"></button>
+
+
+
+		<img src="imgdoong/bigcell2.png" id="bigcell2">
+
+		<img src="imgdoong/circle1.png"id="circle1">
+		<img src="imgdoong/circle1.png"id="circle1_1">
+
+		<img src="imgdoong/human.png" id="human">
+		<img src="imgdoong/human1.png" id="human1">
+		<button onclick="fnMove('3')" class="button1"><img src="imgdoong/human1-1.png" id="human1-1"></button>
+
+		<img src="imgdoong/eyes.png" id="eyes">
+		<div id="eye_circle"></div>
+		<div id="eye_circle2"></div>
+
+		<img src="imgdoong/hand2.png" id="hand1">
+		<img src="imgdoong/hand2.png" id="hand1-1">
+
+		<img src="imgdoong/hand4.png" id="hand5">
+		<img src="imgdoong/hand4.png" id="hand5-1">
+		
+		<img src="imgdoong/circle2.png"id="circle2">
+		<img src="imgdoong/circle2.png"id="circle2_1">
+
+
+		<img src="imgdoong/hand.png" id="hand2">
+		<img src="imgdoong/hand.png" id="hand3">
+
+		<img src="imgdoong/tree2.gif" id="tree2">
+		<img src="imgdoong/tree2-1.gif" id="tree2_1">	
+
+		
+		<img src="imgdoong/scull.png" id="scull">
+		<img src="imgdoong/bigcell3.png" id="bigcell3">
+
+		<img src="imgdoong/hand3.png" id="hand4">
+		<img src="imgdoong/hand3.png" id="hand4-1">
+
+		<img src="imgdoong/tree1.png" id="tree1">
+		<img src="imgdoong/tree1-1.png" id="tree1_1">
+		
+		<img src="imgdoong/tree3.gif" id="tree3">
+		<img src="imgdoong/tree3-1.gif" id="tree3_1">
+
+		<!--텍스트창-->
+
+		<p class="maintext" id="text1">흉둥이는 사람한테 붙기 전까지는 아주 작은 형태지만,<br>
+		한 번 사람에게 붙게 되면 몸집이 불어나면서<br>사람을 집어먹을 만큼 커다래진대.</p>
+
+		<p class="maintext" id="text2">신기하게도 흉둥이의 가죽은 투명해서<br>집어삼킨 사람의 형태가 다른 사람에게도 그대로 보인대.</p>
+
+
+		<p class="maintext" id="text3">근데 어찌나 착 달라붙어 있는지,<br>겉으로 봤을 때는 일반 사람하고 똑같아서<br>흉둥이인지 아닌지 구분하기가 쉽지 않대. </p>
+
+			<p class="maintext" id="text4">가죽도 아주 질겨서 혼자서는 쉬이 빠져나오지<br>못한다 하더라고. 게다가 삼켜진 사람은<br>흉둥이에게 생각과 행동이 통제되어서<br>다른 사람에게 도움을 요청하기도 쉽지 않대.</p>
+
+			<p class="maintext" id="text5">흉둥이는 삼켜진 사람의 입으로 또 다른 사람에게 새끼를 까며 기생한다는데,
+		그래서 그런지 사람들에게 쉴 새 없이 말을 한다 하더라고.
+		주로 자기가 세상에서 제일 불행하고 힘든 사람인 듯이 신세 한탄을 많이 한대.</p>
+
+		<div class="textbox" id="d_textbox2"></div>
+
+
+		<div class="textbox" id="d_textbox3"></div>
+
+		<div id="moniter"></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/doong-js.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+    function fnMove(seq){
+        var offset = $("#d_textbox" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 15000);
+    }
+	</script>
+
+</body>
+</html>
