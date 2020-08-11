@@ -1,0 +1,168 @@
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{ color: white;}
+p{line-height: 27px; word-break: keep-all;}
+
+
+.warp{
+	width: 1200px; position: absolute;
+	left: calc(50% - 600px); background: black;
+}
+
+#main-img{
+	width: 1200px; position: absolute;
+	left: calc(50% - 600px);
+}
+
+#doong-div{
+	position: absolute;
+	right: -1px; top: 273px;
+	width: 590px;
+	height: 838px;
+	clip-path: polygon(0% 13%, 100% 0, 100% 78%, 69% 100%, 0% 100%);
+	background: white;
+	filter: brightness(50%);
+	transition: all 0.5s;
+}
+
+#doong-div:hover{
+	filter: brightness(100%);
+}
+
+#doong-div:hover #doong-ball{
+	animation: lo 4s linear infinite alternate;
+}
+
+@keyframes lo { 
+				to {transform: rotate(360deg); position: absolute; z-index: 0;}
+				from{transform: rotate(0deg); position: absolute; z-index: 0;}
+			} 
+
+#doong-div:hover #doong-human{
+	transition: all 0.6s; opacity: 0%;
+}
+
+
+#doong-div:hover #doong-bigcell{
+	animation: treemove-e 0.5s infinite linear alternate, bigcell 0.2s infinite linear alternate;
+}
+
+#doong-div:hover #doong-tree1{
+	animation: treemove 1s infinite linear alternate
+}
+
+#doong-div:hover #doong-tree2{
+	animation: treemove-ee 1.3s infinite linear alternate
+}
+
+@keyframes treemove-e { 
+				to {transform: rotate(-5deg); position: absolute; z-index: 0;}
+				from{transform: rotate(5deg); position: absolute; z-index: 0;}
+			}
+
+@keyframes bigcell { 
+				to {position: absolute; z-index: 0; right: -14%}
+				from{position: absolute; z-index: 0; right: -16%}
+			}
+
+@keyframes treemove { 
+				to {transform: rotate(12deg); position: absolute; z-index: 0;}
+				from{transform: rotate(0deg); position: absolute; z-index: 0;}
+			}
+
+@keyframes treemove-ee { 
+				to {transform: rotate(0deg); position: absolute; z-index: 0;}
+				from{transform: rotate(14deg); position: absolute; z-index: 0;}
+			}
+
+#doong-ball{
+	position: absolute;
+	top: -40px;
+	left: 80px;
+}
+
+#doong-back2{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#doong-back1{
+	position: absolute;
+	top: -150px;
+	right: -5px;
+}
+
+#doong-tree1{
+	position: absolute;
+	bottom: 210px;
+	left: -10px;
+}
+
+
+#doong-tree2{
+	position: absolute;
+	bottom: 30px;
+	left: 5px;
+}
+
+
+#doong-bigcell{
+	position: absolute;
+	top: -50px;
+	right: -70px;
+}
+
+#doong-human{
+	position: absolute;
+	bottom: -25px;
+	right: -40px;
+}
+
+#doong-human2{
+	position: absolute;
+	bottom: -25px;
+	right: -40px;
+}
+
+
+#battle-div{
+	position: absolute;
+	left: 0px; top: 1429px;
+	width:626px;
+	height: 1027px;
+	clip-path: polygon(0 7.6%, 12.7% 0, 100% 60.5%, 100% 100%, 0 100%);
+	background: white;
+	opacity: 50%
+}
+
+
+#battle-img{
+	width:626px; position: absolute; 
+	left: 0px; top: 1429px;
+	filter: brightness(50%);
+	transition: all 0.5s;
+}
+
+#battle-img:hover{
+	filter: brightness(100%);
+}
+
+#main-lightback{
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 519px;
+}
+
+#main-light{
+	position: absolute;
+	left: calc(50% - 390.5px);
+	top: -17px;
+}
+
+#main-scull{
+	position: absolute;
+	left: calc(50% - 439.5px);
+	top: 565px;
+}
